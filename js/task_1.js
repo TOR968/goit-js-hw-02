@@ -3,8 +3,7 @@ const getItemsString = function (array) {
   for (let i = 0; i < array.length; i += 1) {
     const itemsArray = array[i];
     const numberItems = i + 1;
-    const result = `${numberItems} - ${itemsArray}`;
-    // return result;
+    const result = `${numberItems} - ${itemsArray} \n`;
     console.log(result);
   }
   // return getItemsString();
