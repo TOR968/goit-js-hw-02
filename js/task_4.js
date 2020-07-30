@@ -3,7 +3,7 @@ function formatString(string, maxLength = 40) {
   let removed = '';
   let result = '';
   if (string.split('').length > maxLength) {
-    return string.split('').splice(maxLength, 100, '...');
+    return string.split('').splice(1, 100, '...').join('');
   } else {
     return string;
   }
