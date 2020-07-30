@@ -1,13 +1,11 @@
 const getItemsString = function (array) {
-  // Write code under this line
+  let result = '';
   for (let i = 0; i < array.length; i += 1) {
     const itemsArray = array[i];
     const numberItems = i + 1;
-    const result = `${numberItems} - ${itemsArray} \n`;
-    console.log(result);
+    result += `${numberItems} - ${itemsArray}\n`;
   }
-  // return getItemsString();
-  // return result
+  return result;
 };
 console.log(getItemsString(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']));
 /*
