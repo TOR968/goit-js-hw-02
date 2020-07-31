@@ -3,13 +3,10 @@ function mapArray(array) {
 
   for (let i = 0; i < array.length; i += 1) {
     // Write code under this line
-      let mn = array[i] * 10;
-      
-    console.log(mn);
-    // return array;
+    array[i] *= 10;
   }
+  return array;
   return numbers;
-  // return numbers;
 }
 
 console.log(mapArray([-2, 0, 2]));
