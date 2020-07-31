@@ -1,14 +1,11 @@
 function formatString(string, maxLength = 40) {
   // Write code under this line
-  let removed = '';
-  let result = '';
-  if (string.split('').length > maxLength) {
-    return string.split('').splice(1, 100, '...').join('');
-  } else {
-    return string;
-  }
-  //   return removed;
+
+  return string.length > maxLength
+    ? string.slice(0, maxLength) + '...'
+    : string;
 }
+
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
 // 'Curabitur ligula sapien, tincidunt non.'
 
@@ -19,3 +16,5 @@ console.log(
   formatString('Vestibulum facilisis, purus nec pulvinar iaculis.', 30),
 );
 // 'Vestibulum facilisis, purus ne...'
+
+// Return(string.length > 40) ? String.slice(0, 40) + ‘...’: string;
