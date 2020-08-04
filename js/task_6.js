@@ -3,9 +3,8 @@ function mapArray(array) {
 
   for (let i = 0; i < array.length; i += 1) {
     // Write code under this line
-    array[i] *= 10;
+    numbers[i] = array[i] *= 10;
   }
-  return array;
   return numbers;
 }
 
